@@ -34,6 +34,8 @@
     color: rgb(2, 90, 78);
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .btn:hover{
@@ -216,6 +218,11 @@ h4.display-4{
         margin-right: 10px;
     }
 
+    .btn{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
     .myImage{
         width: 80vw;
         height: auto;
