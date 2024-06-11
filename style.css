@@ -265,7 +265,12 @@ h4.display-4{
 
     .project-grid-container{
         row-gap: 3vh;
-        column-gap: 1rem;
+        column-gap:0;
+    }
+
+    .tab-pane{
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
 }
