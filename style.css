@@ -79,12 +79,12 @@
 
 h1{
     font-size: 8vw;
-    font-family:"Oleo Script", system-ui;
+    /* font-family:"Oleo Script", system-ui; */
     color: rgb(2, 90, 78);
 }
 
 .second-heading{
-    font-family: "Oleo Script", system-ui;
+    /* font-family: "Oleo Script", system-ui; */
     color: rgb(2, 90, 78);
     text-align: start;
 }
@@ -160,38 +160,43 @@ h4.display-4{
 .project-container{
     border-radius: 64px;
     background-color: #95D2B3;
+    padding: 3rem;
 }
 
 .project-grid-container{
     display: grid;
-    grid-template-columns: repeat(22,1fr);
+    grid-template-columns: repeat(26,1fr);
     grid-template-rows: auto auto;
-    row-gap: 10vh;
-    column-gap: 1vw;
+    row-gap: 8vh;
+    column-gap: 1rem;
 }
 
 .project-image{
     position: static;
 }
 
+.project-heading>p{
+    
+}
+
 .project1{
  grid-row-start: 1;
- grid-column: 1 / 15;
+ grid-column: 1 / 16;
 }
 
 .project2{
     grid-row-start: 1;
-    grid-column: 15/23;
+    grid-column: 16/27;
 }
 
 .project3{
     grid-row-start: 2;
-    grid-column: 1/15 ;
+    grid-column: 1/12 ;
 }
 
 .project4{
     grid-row-start: 2;
-    grid-column:15/23;
+    grid-column:12/27;
 }
 
 .project1 a{
@@ -205,15 +210,21 @@ h4.display-4{
         grid-column-end: 22;
     }
 
+    .aboutme{
+        font-size: 2.5vw;
+    }
     
 }
 
-@media (max-width:546px){
+@media (max-width:660px){
     h1{
-        font-size: 15vw;
+        font-size: 13vw;
     }
 
-    a{
+    .home h1 span{
+        font-size: 10vw;
+    }
+    .footer .nav-item a{
         margin-left: 10px;
         margin-right: 10px;
     }
@@ -234,19 +245,27 @@ h4.display-4{
         font-size: 20px;
     }
 
-    .profile-p1{
-        margin-left: .5vw;
-        margin-right: .5vw;
-    }
-
     .timeline-grid{
         margin: .2vw;
-        padding-left: .2vw;
-        padding-right: .2vw;
+        padding-left: .5vw;
+        padding-right: .5vw;
     }
 
     /* projects */
     .project1,.project2,.project3,.project4{
+        grid-row-start: auto;
         grid-column-start: 1;
+        grid-column-end: 27;
     }
+
+    .project-container{
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+    }
+
+    .project-grid-container{
+        row-gap: 3vh;
+        column-gap: 1rem;
+    }
+
 }
