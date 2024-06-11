@@ -36,6 +36,7 @@
     font-weight: 600;
     margin-left: 1rem;
     margin-right: 1rem;
+    border-style: none;
 }
 
 .btn:hover{
@@ -43,19 +44,23 @@
 }
 
 .header > .nav > .nav-item > .active{
-    background-color: rgb(253, 253, 253);
+    background-color: rgba(255, 255, 255, 0.546);
     border-radius: 64px;
     color: rgb(2, 90, 78);
 }
 
 .topnav{
-    background-color: rgba(255, 255, 255, 0.299);
+    /* background-color: rgba(255, 255, 255, 0.299); */
     border-radius: 64px;
 
 }
 
+.scrolled{
+    background-color: rgba(255, 255, 255, 0.299);
+}
+
 .gradient-background {
-    background: linear-gradient(300deg, #ffd6c8, #bdf5ff, #ffa8a8);
+    background: linear-gradient(300deg, rgb(233, 233, 212), #b3a87291, #96ecc691, #ffa8a892);
     background-size: 180% 180%;
     animation: gradient-animation 7s ease infinite;
   }
@@ -159,8 +164,12 @@ h4.display-4{
 /* projects */
 .project-container{
     border-radius: 64px;
-    background-color: #95D2B3;
     padding: 3rem;
+    background-color: #73c2b2;
+}
+
+.project-container:hover{
+    background-color: #95D2B3;
 }
 
 .project-grid-container{
@@ -203,6 +212,22 @@ h4.display-4{
     text-decoration: none;
 }
 
+/* .project2 .project-container{
+    background-color: aqua;
+}
+
+.project3 .project-container{
+    background-color: aqua;
+}
+
+.project4 .project-container{
+    background-color: aqua;
+}
+
+.project1 .project-container{
+    background-color: CDE8E5;
+} */
+
 /* responsiveness */
 @media (max-width:1200px){
     .experience{
@@ -222,7 +247,7 @@ h4.display-4{
     }
 
     .home h1 span{
-        font-size: 10vw;
+        font-size: 7vw;
     }
     .footer .nav-item a{
         margin-left: 10px;
