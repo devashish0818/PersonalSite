@@ -100,6 +100,8 @@ p{
     color: rgb(76, 103, 99); 
 }
 
+
+
 a{
     margin-left: 30px;
     margin-right: 30px;
@@ -212,22 +214,20 @@ h4.display-4{
     text-decoration: none;
 }
 
-/* .project2 .project-container{
-    background-color: aqua;
+.copyrigth{
+    font-weight: normal;
 }
 
-.project3 .project-container{
-    background-color: aqua;
+.contact a.btn{
+    border-radius: 64px;
+    background-color: rgb(2, 90, 78);
+    color: #EFE1D1;
 }
 
-.project4 .project-container{
-    background-color: aqua;
+.footer a{
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
 }
-
-.project1 .project-container{
-    background-color: CDE8E5;
-} */
-
 /* responsiveness */
 @media (max-width:1200px){
     .experience{
